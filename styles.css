@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f5f7;
+    color: #222;
+}
+
+.cabecera {
+    background: #173f35;
+    color: white;
+    padding: 22px 0;
+    margin-bottom: 28px;
+}
+
+.contenedor {
+    width: min(900px, 92%);
+    margin: 0 auto;
+}
+
+.cabecera h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.cabecera p {
+    margin: 6px 0 0;
+}
+
+main {
+    display: grid;
+    gap: 22px;
+}
+
+.panel {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+form {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(100px, 1fr) auto;
+    gap: 14px;
+    align-items: end;
+    margin-top: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+input, select, button {
+    font: inherit;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+input, select {
+    width: 100%;
+    border: 1px solid #c8ced3;
+    background: white;
+}
+
+button {
+    border: 0;
+    background: #176b50;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #10523c;
+}
+
+button.boton-secundario {
+    background: #e4e8eb;
+    color: #222;
+}
+
+button.boton-secundario:hover {
+    background: #d2d9de;
+}
+
+button.boton-eliminar {
+    background: #a62d36;
+}
+
+button.boton-eliminar:hover {
+    background: #81212a;
+}
+
+.mensaje {
+    min-height: 20px;
+    margin-bottom: 0;
+    color: #176b50;
+}
+
+.mensaje.error {
+    color: #a62d36;
+}
+
+.tabla-contenedor {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+th, td {
+    text-align: left;
+    padding: 12px 8px;
+    border-bottom: 1px solid #e3e7e9;
+    vertical-align: middle;
+}
+
+th {
+    background: #f7f8f8;
+}
+
+.cantidad-edicion {
+    width: 85px;
+    min-width: 75px;
+}
+
+.acciones {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+}
+
+.acciones button {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+}
+
+.resumen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #e3e7e9;
+    margin-top: 18px;
+    padding-top: 18px;
+    font-size: 1.2rem;
+}
+
+.resumen strong {
+    color: #176b50;
+    font-size: 1.5rem;
+}
+
+.pie {
+    padding: 22px 0;
+    color: #666;
+    font-size: 0.9rem;
+    text-align: center;
+}

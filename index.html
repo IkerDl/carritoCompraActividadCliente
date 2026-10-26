@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compra</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header class="cabecera">
+        <div class="contenedor">
+            <h1>Carrito de compra</h1>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <section class="panel">
+            <h2>Catálogo de productos</h2>
+            <p>Selecciona un producto y las unidades que quieres añadir al carrito.</p>
+
+            <form id="formulario-anadir">
+                <div class="campo">
+                    <label for="producto">Producto</label>
+                    <select id="producto" required>
+                        <option value="">Cargando productos...</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="unidades">Unidades</label>
+                    <input id="unidades" type="number" min="1" step="1" value="1" required>
+                </div>
+
+                <button type="submit">Añadir al carrito</button>
+            </form>
+
+            <p id="mensaje" class="mensaje" aria-live="polite"></p>
+        </section>
+
+        <section class="panel">
+            <h2>Mi carrito</h2>
+            <div id="contenido-carrito">
+                <p>El carrito está vacío.</p>
+            </div>
+
+            <div class="resumen">
+                <span>Total</span>
+                <strong id="total">0,00 €</strong>
+            </div>
+        </section>
+    </main>
+
+    <footer class="contenedor pie">
+        <p>Actividad 01 -  Desarrollo Web en Entorno Cliente</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
